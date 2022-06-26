@@ -51,11 +51,6 @@
          rdfs:subClassOf <http://www.semanticweb.org/adamu/ontologies/2022/0/untitled-ontology-5#Banking> .
 
 
-###  http://vicodi.org/ontology#Fake_alert
-:Fake_alert rdf:type owl:Class ;
-            rdfs:subClassOf :Transaction .
-
-
 ###  http://vicodi.org/ontology#Fake_cancellation_claim
 :Fake_cancellation_claim rdf:type owl:Class ;
                          rdfs:subClassOf :Travel_insurance .
@@ -69,11 +64,6 @@
 ###  http://vicodi.org/ontology#Fake_injury_claim
 :Fake_injury_claim rdf:type owl:Class ;
                    rdfs:subClassOf :Travel_insurance .
-
-
-###  http://vicodi.org/ontology#Fake_items
-:Fake_items rdf:type owl:Class ;
-            rdfs:subClassOf :Transaction .
 
 
 ###  http://vicodi.org/ontology#Fake_lost_baggage_claim
@@ -109,11 +99,6 @@
 ###  http://vicodi.org/ontology#House_Insurance
 :House_Insurance rdf:type owl:Class ;
                  rdfs:subClassOf :Property_insurance .
-
-
-###  http://vicodi.org/ontology#Items_not_delivered
-:Items_not_delivered rdf:type owl:Class ;
-                     rdfs:subClassOf :Transaction .
 
 
 ###  http://vicodi.org/ontology#Kickbacks_for_patient_referrals
@@ -156,11 +141,6 @@
                     rdfs:subClassOf <http://www.semanticweb.org/adamu/ontologies/2022/0/untitled-ontology-5#Insurance> .
 
 
-###  http://vicodi.org/ontology#Service_not_rendered
-:Service_not_rendered rdf:type owl:Class ;
-                      rdfs:subClassOf :Transaction .
-
-
 ###  http://vicodi.org/ontology#Social_Media_Take_Over
 :Social_Media_Take_Over rdf:type owl:Class ;
                         rdfs:subClassOf <http://www.semanticweb.org/adamu/ontologies/2022/0/untitled-ontology-5#Phishing> .
@@ -169,11 +149,6 @@
 ###  http://vicodi.org/ontology#Stacking
 :Stacking rdf:type owl:Class ;
           rdfs:subClassOf :Life_Insurance .
-
-
-###  http://vicodi.org/ontology#Transaction
-:Transaction rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.semanticweb.org/adamu/ontologies/2022/0/untitled-ontology-5#Financial_Fraud> .
 
 
 ###  http://vicodi.org/ontology#Travel_insurance
@@ -668,15 +643,6 @@
                 :Link_Manipulation
                 :Website_cloning
                 <http://www.semanticweb.org/adamu/ontologies/2022/0/untitled-ontology-5#Payment_Hijacking>
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Fake_alert
-                :Fake_items
-                :Items_not_delivered
-                :Service_not_rendered
               )
 ] .
 
